@@ -1,5 +1,5 @@
 document.addEventListener("keydown", (e) => {
-  const key = e.keyCode;
+  const key = e.code;
   const btn = document.querySelector(`div[data-key="${key}"]`);
   if (!btn) return;
 

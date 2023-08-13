@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 32px;
+  background-color: rgba(20, 64, 121, 0.801);
+}
+
+p {
+  font-size: 12px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.key {
+  background-color: rgb(17, 17, 17);
+  color: white;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.2s;
+}
+
+.playing {
+  transform: scale(1.2);
+  box-shadow: rgb(214, 175, 46) 0px 0px 5px 3px;
+}

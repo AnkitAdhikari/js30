@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <style>
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .clock {
+        border: 2px solid black;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+      }
+      .hand {
+        border: 1px solid blue;
+        width: 48%;
+        position: relative;
+        top: 50%;
+        transform-origin: 100%;
+        transform: rotate(90deg);
+        transition-timing-function: ease-in;
+        transition: all 0.3s;
+      }
+    </style>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock">
+        <div class="hand hrs-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand sec-hand"></div>
+      </div>
+    </div>
+  </body>
+</html>
